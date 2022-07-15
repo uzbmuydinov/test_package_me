@@ -10,13 +10,17 @@ class ButtonTest extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialButton(
-        onPressed: onpressed,color: color,
-    padding: EdgeInsets.all(8),
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+    return Scaffold(
+      body: Center(
+        child: MaterialButton(
+          onPressed: onpressed,color: color,
+          padding: EdgeInsets.all(8),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
 
 
+          ),
+        ),
       ),
     );
   }
