@@ -31,7 +31,7 @@ class ButtonTest extends StatelessWidget {
 }
 
 
-class CustomAppBar extends StatelessWidget {
+  class CustomAppBar extends StatelessWidget {
 
   final String appbarTitle;
   final Color appbarColor;
