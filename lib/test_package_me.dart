@@ -29,3 +29,22 @@ class ButtonTest extends StatelessWidget {
     );
   }
 }
+
+
+class CustomAppBar extends StatelessWidget {
+
+  final String appbarTitle;
+  final Color appbarColor;
+  final double? elevation;
+  const CustomAppBar({Key? key, required this.appbarColor,  this.elevation, required this.appbarTitle}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return AppBar(
+      backgroundColor: appbarColor,
+      elevation:  elevation,
+      title: Text(appbarTitle),
+    );
+  }
+}
+
